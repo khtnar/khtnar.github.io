@@ -1,8 +1,48 @@
-body{
-    background-color:black;
-    color:white;
+
+:root{
+    --background : #12080d;
+    --foreground:#e0cdd5;
 }
-a{
-    color:white;
+body{
+    background-color: var(--background);
+    color: var(--foreground);
+}
+.main_container{
+    display:flex;
+    justify-content: center;
+
+}
+header{
+    border: var(--background) 2px dotted;
+    background-color:  var(--foreground);
+}
+.main{
+    display:flex;
+    flex-direction: row;
+}
+.main > section{
+    border: var(--foreground) 2px dotted;
+    background-color:var(--background);
+    width:25%;
+}
+.main > .widest{
+    width:50% ;
+
+    border: var(--foreground) 2px dotted;
+
 }
 
+.xd{
+    width:80%;
+}
+.main_logo{
+    width:300px;
+}
+
+.main>section>a{
+    color:#d06e9e;
+}
+
+a>img{
+    width:100px;
+}
